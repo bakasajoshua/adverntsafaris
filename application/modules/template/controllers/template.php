@@ -6,7 +6,7 @@ class Template extends MY_Controller {
 
 	// a function that calls the template view
 
-	protected function load_view($data){
+	 function load_view($data){
 		$this->load->view('template_view',$data);
 
 	}
