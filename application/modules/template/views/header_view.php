@@ -7,13 +7,9 @@
 <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
 <meta name="author" content="Adverntsafaris">
 <meta name="Resource-type" content="Document">
-<!-- Attaching the MAYA Icon logo -->
-<link rel="shortcut icon" type="img/x-icon" href="<?php echo base_url() .'assets/icons/maya_logo.png'?>"/>
-<!-- all the constant css in all the pages -->
-<link rel="stylesheet" media="screen" href="<?php echo base_url() .'assets/css/style_general.css'?>"/>
-<link rel="stylesheet" media="screen" href="<?php echo base_url() .'assets/css/slider_show.css'?>"/>
-<link rel="stylesheet" media="screen" href="<?php echo base_url() .'assets/css/style_menu.css'?>"/>
-<!-- dynamic files includes all the .js Functions & Changing -->
+<!-- Attaching the aadverntsafaris Icon logo -->
+<link rel="shortcut icon" type="img/x-icon" href="<?php echo base_url() .'assets/icons/x-icon.png'?>"/>
+<!-- dynamic files includes all the .js .css plugins-->
  	<?php      	
 		$this->load->view('utils/dynamic_files');//..............this is to autoload the dynamic css and js files
 	?>

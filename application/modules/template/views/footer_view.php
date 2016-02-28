@@ -1,6 +1,5 @@
 
 <!-- End of other page contents -->
-
     <div class="footer">
     	<div class="sub_footerA">
         	<div class="in_sub_footerA">
