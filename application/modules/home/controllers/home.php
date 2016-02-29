@@ -10,7 +10,7 @@ class home extends MY_Controller {
 
 	public function index()
 	{
-		$data['content_view'] = "home/index";
+		$data['content_view'] = "home/home_view";
 
 		$data['title']="Homepage";
 

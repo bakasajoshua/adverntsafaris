@@ -2,7 +2,7 @@
 	<div class="logo_cover">
     	<div class="logo">
         	<div class="real_logo">
-        		<a href="<?php echo base_url()?>home"><img src="<?php echo base_url() .'assets/logo/logo_web.png'?>" style="height:50px; width:189px; margin-top:2px;"/></a>
+        		<a href="<?php echo base_url()?>home"><img src="<?php echo base_url() .'assets/logo/advernt-logo.png'?>" style="height:70px; width:189px; margin-top:2px;"/></a>
             </div>
             <div class="search_box">
 	            <form>
