@@ -15,7 +15,7 @@ class home extends MY_Controller {
 		$data['title']="Homepage";
 
 		$data = array_merge($data,$this->load_libraries(array('template','menu','footer')));
-
+		
 		$this->template($data);
 	}
 
