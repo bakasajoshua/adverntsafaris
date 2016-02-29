@@ -63,7 +63,9 @@ $config['plugin_path']		=	'assets/plugins/';
 $config['files_path']		=	'assets/files/';
 
 $config['css_files']		=	array(
-									array('title' => 'template'			,	'file'	=>	'template.css')
+									array('title' => 'template'		,	'file'	=>	'template.css'),
+									array('title' => 'menu'			,	'file'	=>	'menu.css'),
+									array('title' => 'footer'		,	'file'	=>	'footer.css')
 
 									);
 $config['js_files']			=	array(

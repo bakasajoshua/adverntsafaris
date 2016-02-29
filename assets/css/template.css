@@ -1,15 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
 
-@font-face {
-
-}
-
 body{
 	margin:0;
 	padding: 0;
 	background-attachment:fixed;
 	background-color:#f0f0f0;
+	font-family: 'Open Sans', sans-serif;
 }
 .hero{
 	width:100%;
@@ -114,13 +111,6 @@ body{
 	padding:0;
 
 }
-
-@charset "utf-8";
-
-@import "header_fonts.css";
-@import "menu.css";
-@import "footer.css";
-
 
 .firstletter {
 	float: left;

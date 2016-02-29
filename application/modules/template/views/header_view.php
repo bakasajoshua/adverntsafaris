@@ -7,6 +7,8 @@
 <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
 <meta name="author" content="Adverntsafaris">
 <meta name="Resource-type" content="Document">
+<!-- google fonts -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <!-- Attaching the aadverntsafaris Icon logo -->
 <link rel="shortcut icon" type="img/x-icon" href="<?php echo base_url() .'assets/icons/x-icon.png'?>"/>
 <!-- dynamic files includes all the .js .css plugins-->
