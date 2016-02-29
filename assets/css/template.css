@@ -32,3 +32,19 @@ body{
 	height:110px;
 	z-index: 1000;
 }
+.wrapper{
+	transform-style: preserve-3d;
+	width:100%;
+	height:auto;
+	min-height: 100%;
+	margin-top:153px;
+	padding-bottom: 170px;
+	z-index:900;
+}
+.logo{
+	width:1100px;
+	padding-bottom: 0.25em;
+	top:0;
+	height:60px;
+	margin:auto;
+}
