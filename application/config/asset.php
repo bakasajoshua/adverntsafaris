@@ -4,7 +4,7 @@
  * Sekati CodeIgniter Asset Helper
  *
  * @package		Assets
- * @author		Nicholas Mukiri
+ * @author		Omondi Kevin && Joshua Bakasa 
  * @copyright	Copyright (c) 2013, Sekati LLC.
  * @license		http://www.opensource.org/licenses/mit-license.php
  * @link		http://sekati.com
@@ -63,8 +63,7 @@ $config['plugin_path']		=	'assets/plugins/';
 $config['files_path']		=	'assets/files/';
 
 $config['css_files']		=	array(
-									array('title' => 'about_us'			,	'file'	=>	'about.css'),
-									array('title' => 'style_menu'		,	'file'	=>	'style_menu.css')
+									array('title' => 'template'			,	'file'	=>	'template.css')
 
 									);
 $config['js_files']			=	array(
