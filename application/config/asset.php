@@ -69,7 +69,7 @@ $config['css_files']		=	array(
 
 									);
 $config['js_files']			=	array(
-									array('title'	=> 	'jquery'		,	'file'	=>	'jquery-1.10.2.js'),
+									array('title'	=> 	'jquery'		,	'file'	=>	'jquery/jquery-1.11.3.min.js'),
 									array('title'	=>	'current_date' 	,	'file'	=>	'date_function.js')
 								);
 $config['plugin_js_files']	=	array(
