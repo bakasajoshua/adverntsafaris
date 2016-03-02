@@ -19,8 +19,10 @@ body{
 	min-height: 100%;
 }
 .header{
-	background-image:url('../bg-images/jungle.png');
+	background-image:url(../bg-images/nature.jpg);
 	transform-style: preserve-3d;
+	background-size: cover;
+	backface-visibility: 100%;
 	left: 0px;
 	padding-bottom: 0.25em;
 	position: fixed;
@@ -51,16 +53,16 @@ body{
 	width:1100px;
 	padding-bottom: 0.25em;
 	top:0;
-	height:70px;
+	height:60px;
 	margin:auto;
 }
 .logo_cover{
 	width:100%;
 	padding-bottom: 0.25em;
 	top:0;
-	height:70px;
+	height:60px;
 	margin:auto;
-	background-color:rgba(0,0,0,.75);
+	background-color:rgba(0,0,0,.65);
 }
 .real_logo{
 	float:left;

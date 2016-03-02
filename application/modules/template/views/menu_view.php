@@ -2,7 +2,7 @@
 	<div class="logo_cover">
     	<div class="logo">
         	<div class="real_logo">
-        		<a href="<?php echo base_url()?>home"><img src="<?php echo base_url() .'assets/logo/advernt-logo.png'?>" style="height:70px; width:189px; margin-top:0px;"/></a>
+                <a href="<?php echo base_url()?>home"><img src="<?php echo base_url() .'assets/logo/logo_web.png'?>" style="height:50px; width:189px; margin-top:2px;"/></a>
             </div>
             <div class="search_box">
 	            <form>
@@ -20,38 +20,42 @@
         			<li>
         				<a href="<?php echo base_url('home')?>" 
                             <?php if ($_SERVER['REQUEST_URI'] == ' '):?> id="active"
-                            <?php elseif ($_SERVER['REQUEST_URI'] == '/maya/home'):?> id="active"
-                            <?php elseif ($_SERVER['REQUEST_URI'] == '/maya'):?> id="active"
-                            <?php elseif ($_SERVER['REQUEST_URI'] == '/maya/'):?> id="active"
+                            <?php elseif ($_SERVER['REQUEST_URI'] == '/adverntsafaris/home'):?> id="active"
+                            <?php elseif ($_SERVER['REQUEST_URI'] == '/adverntsafaris'):?> id="active"
+                            <?php elseif ($_SERVER['REQUEST_URI'] == '/adverntsafaris/'):?> id="active"
                             <?php endif; ?>>Home
                         </a>
         			</li>
         			<li>
         				<a href="<?php echo base_url('news')?>"
-                            <?php if ($_SERVER['REQUEST_URI'] == '/maya/news'):?> id="active"
+                            <?php if ($_SERVER['REQUEST_URI'] == '/adverntsafaris/news'):?> id="active"
                             <?php elseif ($_SERVER['REQUEST_URI'] == '/news'):?>
                             <?php endif; ?>>News and Events
                         </a>
         			</li>
         			<li>
         				<a href="<?php echo base_url('profiles')?>"
-                            <?php if ($_SERVER['REQUEST_URI'] == '/maya/profiles'):?> id="active"
+                            <?php if ($_SERVER['REQUEST_URI'] == '/adverntsafaris/profiles'):?> id="active"
                             <?php elseif ($_SERVER['REQUEST_URI'] == '/profiles'):?>
-                            <?php endif; ?>>startup profiles
+                            <?php endif; ?>>about us
                         </a>
         			</li>
-        			<!-- Look up for the Blog page -->
-        			<li>
-        				<a href="http://www.blog.maya.co.ke/" target="_blank">Blog</a>
-        			</li>
-        			<!-- End of the Look up page -->
         			<li>
         				<a href="<?php echo base_url('contact')?>"
-                            <?php if ($_SERVER['REQUEST_URI'] == '/maya/contact'):?> id="active"
+                            <?php if ($_SERVER['REQUEST_URI'] == '/adverntsafaris/contact'):?> id="active"
                             <?php elseif ($_SERVER['REQUEST_URI'] == '/contact'):?>
                             <?php endif; ?>>Contact Us
                         </a>
         			</li>
+                    <!-- include the adverts that the companies want done here -->
+                    <li>
+                        <a href="<?php echo base_url('contact')?>"
+                            <?php if ($_SERVER['REQUEST_URI'] == '/adverntsafaris/contact'):?> id="active"
+                            <?php elseif ($_SERVER['REQUEST_URI'] == '/contact'):?>
+                            <?php endif; ?>><font style="color:#1dcb6c;">Advertise +</font>
+                        </a>
+                    </li>
+                    <!-- End of the adverts section -->
 		       </ul>
             </div>
 
