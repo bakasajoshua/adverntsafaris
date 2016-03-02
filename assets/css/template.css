@@ -19,7 +19,7 @@ body{
 	min-height: 100%;
 }
 .header{
-	background-image:url('../bg-images/jungle.jpg');
+	background-image:url('../bg-images/jungle.png');
 	transform-style: preserve-3d;
 	left: 0px;
 	padding-bottom: 0.25em;
