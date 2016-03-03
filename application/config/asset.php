@@ -75,13 +75,14 @@ $config['js_files']			=	array(
 								);
 $config['plugin_js_files']	=	array(
 									array('title'	=> 'jsCombo'		,	'file'	=>	'jsCombo-master/base.js'),
-									array('title'	=> 'load_jsCombo'	,	'file'	=>	'jsCombo-master/load_jsCombo.js')
+									array('title'	=> 'load_jsCombo'	,	'file'	=>	'jsCombo-master/load_jsCombo.js'),
+									array('title'	=> 'bootstrap'			,	'file'	=>	'bootstrap/js/bootstrap.js')
 
 
 								);	
 $config['plugin_css_files']	=	array(
 									array('title'	=> 'jsCombo_css'			,	'file'	=>	'jsCombo-master/main.css'),
-									array('title'	=> 'Bootstrap_css'			,	'file'	=>	'bootstrap/css/bootstrap.min.css')
+									array('title'	=> 'bootstrap'			,	'file'	=>	'bootstrap/css/bootstrap.css')
 									
 								);
 $config['plugin_php_files']	=	array(

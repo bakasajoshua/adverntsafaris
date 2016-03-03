@@ -23,5 +23,5 @@
 <body>
 
 <!-- Start of the Page Contents -->
-<div class="container">
+<div class="container-fluid">
 <div class="hero"> 

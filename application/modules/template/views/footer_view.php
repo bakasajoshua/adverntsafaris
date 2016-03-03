@@ -1,9 +1,9 @@
 
 <!-- End of other page contents -->
-    <div class="footer">
+    <div class="container footer">
     	<div class="sub_footerA">
-        	<div class="in_sub_footerA">
-            	<div class="footer_classA">
+        	<div class="row in_sub_footerA">
+            	<div class="footer_classA col-md-4">
                 	<div class="foot_strip" style="height:34px; border-bottom:dotted thin #FFF;">
                     	<h1 style="color:#FFF;">Monthly Newsletter</h1></div>
                     	<div class="foot_strip" style="height:55px;">
@@ -23,7 +23,7 @@
                         </div>
                 </div>
                 
-                <div class="footer_classB" style="margin-left:15px;">
+                <div class="col-md-4 footer_classB" style="margin-left:15px;">
                 	<div class="foot_strip" style="height:35px; border-bottom:dotted thin #FFF;">
                     	<h1 style="color:#FFF;">About Us</h1>
                     </div>
@@ -32,7 +32,7 @@
                         </div>
                 </div>
                 
-                <div class="footer_classB" style="margin-left:15px; text-align:right;">
+                <div class="col-md-4 footer_classB" style="margin-left:15px; text-align:right;">
                     <div class="foot_strip" style="height:35px; border-bottom:dotted thin #FFF;">
                         <h1 style="color:#FFF;">Contact Us</h1>
                     </div>
@@ -45,6 +45,7 @@
 
 <!-- End of Footer -->
     
-</div>
+</div><!--End of class hero(header_view)-->
+</div><!--End of class container(header_view)-->
 </body>
 </html>
