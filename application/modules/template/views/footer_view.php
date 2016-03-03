@@ -25,7 +25,7 @@
                 
                 <div class="footer_classB" style="margin-left:15px;">
                 	<div class="foot_strip" style="height:35px; border-bottom:dotted thin #FFF;">
-                    	<h1 style="color:#FFF;">Stay Connected</h1>
+                    	<h1 style="color:#FFF;">About Us</h1>
                     </div>
                     	<div class="footer-class-google-plus">
                             <div class="g-person" data-width="340" data-href="https://plus.google.com/101854743505501687649" data-theme="dark" data-layout="landscape" data-rel="author"></div>
@@ -34,7 +34,7 @@
                 
                 <div class="footer_classB" style="margin-left:15px; text-align:right;">
                     <div class="foot_strip" style="height:35px; border-bottom:dotted thin #FFF;">
-                        <h1 style="color:#FFF;">Right of Use</h1>
+                        <h1 style="color:#FFF;">Contact Us</h1>
                     </div>
                 	<br /><br /><br />
                 	&copy;Market and Advertise You Africa. <?php echo date ("Y")?>.<br /> All rights reserved.

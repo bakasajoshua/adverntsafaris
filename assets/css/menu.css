@@ -1,7 +1,8 @@
 .menu_column{
+	font-size: 96%;
 	float:left;
 	height:50px;
-	width:800px;
+	width:850px;
 	text-transform:uppercase;
 }
 .main_column{
@@ -36,7 +37,7 @@ ul {
 li a {
 	color:#000;
 	text-decoration:none;
-	padding:0px 27.45px;
+	padding:0px 27px;
 	display: block;
 	text-align: center;
 }
