@@ -80,7 +80,7 @@ $config['plugin_js_files']	=	array(
 								);	
 $config['plugin_css_files']	=	array(
 									array('title'	=> 'jsCombo_css'			,	'file'	=>	'jsCombo-master/main.css'),
-									array('title'	=> 'bootstrap_css'			,	'file'	=>	'bootstrap/css/bootstrap.min.css')
+									array('title'	=> 'Bootstrap_css'			,	'file'	=>	'bootstrap/css/bootstrap.min.css')
 									
 								);
 $config['plugin_php_files']	=	array(
