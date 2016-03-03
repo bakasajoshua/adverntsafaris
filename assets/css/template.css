@@ -37,7 +37,7 @@ body{
 	width:100%;
 	height:auto;
 	min-height: 100%;
-	margin-top:153px;
+	margin-top:140px;
 	padding-bottom: 170px;
 	z-index:900;
 }
@@ -200,7 +200,7 @@ body{
 	float:left;
 }
 .top_stripA{
-	width:150px;
+	width:100%;
 	text-align:left;
 	text-transform:uppercase;	
 	height:20px;
