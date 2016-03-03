@@ -30,7 +30,7 @@
         				<a href="<?php echo base_url('news')?>"
                             <?php if ($_SERVER['REQUEST_URI'] == '/adverntsafaris/news'):?> id="active"
                             <?php elseif ($_SERVER['REQUEST_URI'] == '/news'):?>
-                            <?php endif; ?>>News and Events
+                            <?php endif; ?>>Upcoming Events
                         </a>
         			</li>
         			<li>
@@ -68,7 +68,7 @@
 
             if(!$this->session->userdata('is_logged_in')){?>
             	<a href="<?php echo base_url('login')?>">
-                    <input type="submit" class="submit_top" style="float:right;width:80px; height:35px; margin-top:7.5px;" value="Register"/>
+                    <input type="submit" class="submit_top" style="float:right;width:80px; height:35px; margin-top:7.5px;" value="sign up"/>
                	</a>
 
                 <a href="<?php echo base_url('login')?>">    

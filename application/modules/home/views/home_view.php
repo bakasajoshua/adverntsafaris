@@ -25,6 +25,8 @@
     <!--start of the posts section  -->
             <div id="in_slideB" style="background-color: magenta;">
 
+            <!-- Import of the the preview views -->
+
                     
             </div>
     <!-- end of the posts section -->
