@@ -24,4 +24,4 @@
 
 <!-- Start of the Page Contents -->
 <div class="container-fluid">
-<!-- <div class="hero">  -->
+<div class="hero"> 
