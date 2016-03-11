@@ -19,6 +19,17 @@ class home extends MY_Controller {
 		$this->template($data);
 	}
 
+	public function inprogress()
+	{
+		$data['content_view'] = "home/home_view";
+
+		$data['title']="Homepage";
+
+		$data = array_merge($data,$this->load_libraries(array('template','menu','footer','fonts')));
+		// echo "<pre>";print_r($data);die();
+		$this->template($data);
+	}
+
 }
 
 /* End of file welcome.php */

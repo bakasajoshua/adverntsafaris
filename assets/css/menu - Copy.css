@@ -1,8 +1,8 @@
 .menu_column{
 	font-size: 96%;
-	/*float:left;*/
-	/*height:50px;
-	width:850px;*/
+	float:left;
+	height:50px;
+	width:850px;
 	text-transform:uppercase;
 }
 .main_column{
@@ -18,7 +18,7 @@
     -ms-border-radius: none;
     border-radius: none;
 }    
-/*.after_column{
+.after_column{
 	float:right;
 	margin-right:0px;
 	height:50px;
@@ -26,11 +26,11 @@
 	background-image:url(../icons/user_.png);
 	background-repeat:no-repeat;
 	background-position:3px;
-}*/
+}
 .after_column:hover{
 	background-image:url(../icons/user_x.png);
 }
-/*ul {
+ul {
 	display: table;
 	margin: 0;
 	overflow: auto;
@@ -47,7 +47,7 @@ li a {
 	padding:0px 27px;
 	display: block;
 	text-align: center;
-}*/
+}
 
  li a:hover {
 	 color:#3eb8f1;
