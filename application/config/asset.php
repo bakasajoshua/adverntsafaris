@@ -66,6 +66,7 @@ $config['css_files']		=	array(
 									array('title' => 'template'		,	'file'	=>	'template.css'),
 									array('title' => 'menu'			,	'file'	=>	'menu.css'),
 									array('title' => 'footer'		,	'file'	=>	'footer.css'),
+									array('title' => 'carousel'		,	'file'	=>	'carousel.css'),
 									array('title' => 'fonts'		,	'file'	=>	'fonts.css')
 
 									);
@@ -76,13 +77,15 @@ $config['plugin_js_files']	=	array(
 									array('title'	=> 	'jquery'		,	'file'	=>	'jquery/jquery-1.11.3.min.js'),
 									array('title'	=> 'jsCombo'		,	'file'	=>	'jsCombo-master/base.js'),
 									array('title'	=> 'load_jsCombo'	,	'file'	=>	'jsCombo-master/load_jsCombo.js'),
-									array('title'	=> 'bootstrap'			,	'file'	=>	'bootstrap/js/bootstrap.js')
+									array('title'	=> 'bootstrap'			,	'file'	=>	'bootstrap/js/bootstrap.js'),
+									array('title'	=> 'materialize'			,	'file'	=>	'materialize/js/materialize.min.js')
 
 
 								);	
 $config['plugin_css_files']	=	array(
 									array('title'	=> 'jsCombo_css'			,	'file'	=>	'jsCombo-master/main.css'),
-									array('title'	=> 'bootstrap'			,	'file'	=>	'bootstrap/css/bootstrap.css')
+									array('title'	=> 'bootstrap'			,	'file'	=>	'bootstrap/css/bootstrap.css'),
+									array('title'	=> 'materialize'			,	'file'	=>	'materialize/css/materialize.min.css')
 									
 								);
 $config['plugin_php_files']	=	array(

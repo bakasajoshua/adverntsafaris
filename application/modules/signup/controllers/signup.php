@@ -14,7 +14,14 @@ class signup extends MY_Controller
 
 	function index()
 	{
-		$this->load->view('signup_view');
+		$data['content_view'] = "signup/signup_view2";
+
+		$data['title']="Sign Up";
+
+		$data = array_merge($data,$this->load_libraries(array('materialize')));
+		// echo "<pre>";print_r($data);die();
+		$this->auth($data);
+		// $this->load->view('signup_view2');
 	}
 
 	function registration()

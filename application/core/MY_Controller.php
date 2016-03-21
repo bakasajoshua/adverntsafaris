@@ -22,7 +22,13 @@ class  MY_Controller  extends  MX_Controller {
 		$this->template->admin_view($info);
 
 	}
-	public function load_libraries($arr){
+
+	protected function auth($data){
+		$this->load->module('template');
+		$this->template->auth_view($data);
+	}
+	
+	public function load_libraries($arr=NULL){
 
 		array_unshift($arr, "jquery","bootstrap");
 				

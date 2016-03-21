@@ -15,8 +15,14 @@ class login extends MY_Controller
 
 	function index()
 	{
-		
-		$this->load->view('login_view');
+		$data['content_view'] = "login/login_view2";
+
+		$data['title']="Sign In";
+
+		$data = array_merge($data,$this->load_libraries(array('materialize')));
+		// echo "<pre>";print_r($data);die();
+		$this->auth($data);
+		// $this->load->view('login_view2');
 	}
 
 	function authentication()

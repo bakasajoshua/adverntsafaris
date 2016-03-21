@@ -15,4 +15,9 @@ class Template extends MY_Controller {
 
 	}
 
+	function auth_view($data)
+	{
+		$this->load->view('authentication_view',$data);
+	}
+
 }
