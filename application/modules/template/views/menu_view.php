@@ -70,7 +70,7 @@
                     <?php 
                         if(!$this->session->userdata('is_logged_in')){?>
                             <li>
-                                <a href="<?php echo base_url('login')?>">
+                                <a href="<?php echo base_url('signup')?>">
                                     <input type="submit" class="submit_top" value="sign up"/>
                                 </a>
                             </li>
