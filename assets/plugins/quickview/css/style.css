@@ -59,7 +59,7 @@ Modules - reusable parts of our design
 -------------------------------- */
 .cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
-  width: 90%;
+  width: 96%;
   max-width: 1170px;
   margin: 0 auto;
 }
@@ -122,7 +122,7 @@ header h1 {
 
 .cd-item {
   position: relative;
-  margin: 0 0 1em;
+  /*margin: 0 0 1em;*/
 }
 .cd-item > img {
   display: block;

@@ -31,7 +31,7 @@
 	<?php echo form_close();?>
 </div>
 <?//cyrus_authenticate(connection)?>
-<!doctype html>
+<!-- <!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -51,4 +51,4 @@
 	  <mui-btn style="raised">Submit</mui-btn>
 	</form>
   </body>
-</html>
+</html> -->

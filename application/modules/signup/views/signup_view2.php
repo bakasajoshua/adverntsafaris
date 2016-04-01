@@ -49,9 +49,10 @@
             <label for="confirm_password">Password</label>
           </div>
         </div>
-        <button class="btn waves-effect" type="submit" name="action">Sign Up
+        <button class="btn waves-effect" type="submit">Sign Up
           <i class="material-icons right">send</i>
         </button>
+        <input type="submit" value="SIGN UP">
       </form>
     </div>
   </div>

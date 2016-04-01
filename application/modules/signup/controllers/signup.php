@@ -14,7 +14,7 @@ class signup extends MY_Controller
 
 	function index()
 	{
-		$data['content_view'] = "signup/signup_view2";
+		$data['content_view'] = "signup/signup_view";
 
 		$data['title']="Sign Up";
 
@@ -28,7 +28,7 @@ class signup extends MY_Controller
 	{
 		$reg = $this->signup_model->register();
 		if ($reg) {
-			print('Sign Up successful');
+			redirect(base_url().'login');
 		}
 	}
 }
