@@ -13,26 +13,27 @@
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
                     <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <!-- <li data-target="#myCarousel" data-slide-to="3"></li> -->
                   </ol>
                   <div class="carousel-inner" role="listbox">
-                    <div class="item active">
+                    <!-- <div class="item active">
                       <img class="first-slide" src="<?php echo base_url().'assets/bg-images/safari.jpg'?>" alt="First slide">
                       <div class="container">
                         <div class="carousel-caption">
-                          <h1>Discover the World.</h1>
+                          <h1>Plan your .</h1>
                           <p>Get to hear stories of the adventures people experience and plan for your own.</p>
                           <?php if(!$this->session->userdata('is_logged_in')){?>
                             <p><a class="btn btn-lg btn-primary" href="<?php echo base_url().'signup'?>" role="button">Sign up today</a></p>
                           <?php } ?>
                         </div>
                       </div>
-                    </div>
-                    <div class="item">
+                    </div> -->
+                    <div class="item active">
                       <img class="second-slide" src="<?php echo base_url().'assets/bg-images/nature.jpg'?>" alt="Second slide">
                       <div class="container">
                         <div class="carousel-caption">
                           <h1>Share your experience.</h1>
-                          <p>Tell others of the amazing experience you have had as you travelled and enjoyed the beauty the world has to offer.</p>
+                          <p>Share your travel experience: Holidays &amp; vacations, getaways and adventure destinations.</p>
                           <?php if(!$this->session->userdata('is_logged_in')){?>
                           <p><a class="btn btn-lg btn-primary" href="<?php echo base_url().'login'?>" role="button">Sign In</a></p>
                           <?php } ?>
@@ -40,11 +41,20 @@
                       </div>
                     </div>
                     <div class="item">
-                      <img class="third-slide" src="<?php echo base_url().'assets/bg-images/wildlife-africa.jpg'?>" alt="Third slide">
+                      <img class="third-slide" src="<?php echo base_url().'assets/bg-images/22.jpg'?>" alt="Third slide">
                       <div class="container">
                         <div class="carousel-caption">
                           <h1>Relate.</h1>
-                          <p>Share stories with others just like you who have been able to enjoy the beauty and plan for more adventure.</p>
+                          <p>Connect with other travel enthusiasts, share stories and memories on your travel expriences.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img class="third-slide" src="<?php echo base_url().'assets/bg-images/zipper.jpg'?>" alt="Third slide">
+                      <div class="container">
+                        <div class="carousel-caption">
+                          <h1>Plan your next Adventure.</h1>
+                          <p>Access and Share information on upcoming events: Holiday deals,trips and adventures.</p>
                         </div>
                       </div>
                     </div>
