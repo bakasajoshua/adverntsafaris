@@ -45,7 +45,7 @@
                       <div class="container">
                         <div class="carousel-caption">
                           <h1>Relate.</h1>
-                          <p>Connect with other travel enthusiasts, share stories and memories on your travel expriences.</p>
+                          <p>Connect with other travel enthusiasts, share memories and stories of your travel expriences.</p>
                         </div>
                       </div>
                     </div>
