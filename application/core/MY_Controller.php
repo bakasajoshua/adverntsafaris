@@ -27,6 +27,13 @@ class  MY_Controller  extends  MX_Controller {
 		$this->load->module('template');
 		$this->template->auth_view($data);
 	}
+
+	public function is_logged_in()
+	{
+		if(!$this->session->userdata('is_logged_in')){
+			redirect(base_url().'home');
+		}
+	}
 	
 	public function load_libraries($arr=NULL){
 

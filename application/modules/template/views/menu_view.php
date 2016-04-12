@@ -35,6 +35,15 @@
                             <?php endif; ?>>Home
                         </a>
         			</li>
+                    <?php if($this->session->userdata('is_logged_in')){?>
+                    <li>
+                        <a href="<?php echo base_url('post')?>"
+                            <?php if ($_SERVER['REQUEST_URI'] == '/adverntsafaris/post'):?> id="active"
+                            <?php elseif ($_SERVER['REQUEST_URI'] == '/post'):?>
+                            <?php endif; ?>>Posts
+                        </a>
+                    </li>
+                    <?php } ?>
         			<li>
         				<a href="<?php echo base_url('news')?>"
                             <?php if ($_SERVER['REQUEST_URI'] == '/adverntsafaris/news'):?> id="active"

@@ -35,7 +35,7 @@ class login extends MY_Controller
 						'is_logged_in' => TRUE
 					);
 			$this->session->set_userdata($data);
-			$redirect = base_url() . 'home';
+			$redirect = base_url() . 'post';
 		} else {
 			$this->session->set_flashdata('Warning', 'Wrong username or password!');
 			$redirect = base_url() . 'login';
