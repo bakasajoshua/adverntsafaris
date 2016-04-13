@@ -69,68 +69,45 @@
                   </a>
                 </div>
                 <!-- /.carousel -->
+                <h3><center>Your best travel experience begins here.</center></h3>
                 <!--Beginning of posts-->
                 <div class="row">
                   <ul class="cd-items cd-container">
                     <li class="cd-item">
-                      <img src="<?php echo base_url();?>assets/plugins/quickview/img/item-1.jpg" alt="Item Preview">
-                      <a href="#0" class="cd-trigger">Quick View</a>
+                      <img src="<?php echo base_url();?>assets/bg-images/wildebeestmara.jpg" alt="Item Preview">
+                      <a href="#0" class="cd-trigger">Maasai Mara</a>
+                    </li> <!-- cd-item -->
+                    <li class="cd-item">
+                      <img src="<?php echo base_url();?>assets/bg-images/wildebeestmara.jpg" alt="Item Preview">
+                      <a href="#0" class="cd-trigger">Maasai Mara</a>
+                    </li> <!-- cd-item -->
+                    <li class="cd-item">
+                      <img src="<?php echo base_url();?>assets/bg-images/wildebeestmara.jpg" alt="Item Preview">
+                      <a href="#0" class="cd-trigger">Maasai Mara</a>
+                    </li> <!-- cd-item -->
+                    <li class="cd-item">
+                      <img src="<?php echo base_url();?>assets/bg-images/wildebeestmara.jpg" alt="Item Preview">
+                      <a href="#0" class="cd-trigger">Maasai Mara</a>
                     </li> <!-- cd-item -->
 
                     <li class="cd-item">
-                      <img src="<?php echo base_url();?>assets/plugins/quickview/img/item-1.jpg" alt="Item Preview">
-                      <a href="#0" class="cd-trigger">Quick View</a>
+                      <img src="<?php echo base_url();?>assets/bg-images/victoriafalls.jpg" alt="Item Preview">
+                      <a href="#0" class="cd-trigger">Victoria Falls</a>
+                    </li> <!-- cd-item -->
+                    <li class="cd-item">
+                      <img src="<?php echo base_url();?>assets/bg-images/victoriafalls.jpg" alt="Item Preview">
+                      <a href="#0" class="cd-trigger">Victoria Falls</a>
+                    </li> <!-- cd-item -->
+                    <li class="cd-item">
+                      <img src="<?php echo base_url();?>assets/bg-images/victoriafalls.jpg" alt="Item Preview">
+                      <a href="#0" class="cd-trigger">Victoria Falls</a>
+                    </li> <!-- cd-item -->
+                    <li class="cd-item">
+                      <img src="<?php echo base_url();?>assets/bg-images/victoriafalls.jpg" alt="Item Preview">
+                      <a href="#0" class="cd-trigger">Victoria Falls</a>
                     </li> <!-- cd-item -->
 
-                    <li class="cd-item">
-                      <img src="<?php echo base_url();?>assets/plugins/quickview/img/item-1.jpg" alt="Item Preview">
-                      <a href="#0" class="cd-trigger">Quick View</a>
-                    </li> <!-- cd-item -->
-
-                    <li class="cd-item">
-                      <img src="<?php echo base_url();?>assets/plugins/quickview/img/item-1.jpg" alt="Item Preview">
-                      <a href="#0" class="cd-trigger">Quick View</a>
-                    </li> <!-- cd-item -->
-
-                    <li class="cd-item">
-                      <img src="<?php echo base_url();?>assets/plugins/quickview/img/item-1.jpg" alt="Item Preview">
-                      <a href="#0" class="cd-trigger">Quick View</a>
-                    </li> <!-- cd-item -->
-
-                    <li class="cd-item">
-                      <img src="<?php echo base_url();?>assets/plugins/quickview/img/item-1.jpg" alt="Item Preview">
-                      <a href="#0" class="cd-trigger">Quick View</a>
-                    </li> <!-- cd-item -->
-
-                    <li class="cd-item">
-                      <img src="<?php echo base_url();?>assets/plugins/quickview/img/item-1.jpg" alt="Item Preview">
-                      <a href="#0" class="cd-trigger">Quick View</a>
-                    </li> <!-- cd-item -->
-
-                    <li class="cd-item">
-                      <img src="<?php echo base_url();?>assets/plugins/quickview/img/item-1.jpg" alt="Item Preview">
-                      <a href="#0" class="cd-trigger">Quick View</a>
-                    </li> <!-- cd-item -->
-
-                    <li class="cd-item">
-                      <img src="<?php echo base_url();?>assets/plugins/quickview/img/item-1.jpg" alt="Item Preview">
-                      <a href="#0" class="cd-trigger">Quick View</a>
-                    </li> <!-- cd-item -->
-
-                    <li class="cd-item">
-                      <img src="<?php echo base_url();?>assets/plugins/quickview/img/item-1.jpg" alt="Item Preview">
-                      <a href="#0" class="cd-trigger">Quick View</a>
-                    </li> <!-- cd-item -->
-
-                    <li class="cd-item">
-                      <img src="<?php echo base_url();?>assets/plugins/quickview/img/item-1.jpg" alt="Item Preview">
-                      <a href="#0" class="cd-trigger">Quick View</a>
-                    </li> <!-- cd-item -->
-
-                    <li class="cd-item">
-                      <img src="<?php echo base_url();?>assets/plugins/quickview/img/item-1.jpg" alt="Item Preview">
-                      <a href="#0" class="cd-trigger">Quick View</a>
-                    </li> <!-- cd-item -->
+                    
                   </ul> <!-- cd-items -->
 
                   <div class="cd-quick-view">

@@ -4,6 +4,7 @@
   }
   .posting{
     background-color: white;
+    margin: 1.5em;
   }
   textarea{
     width: 100%;
@@ -28,17 +29,21 @@
 <div class="row" id="row">
 <div class="col-md-9">
   <div class="posting row">
+  <form action="<?php echo base_url();?>post/submit" method="post" enctype="multipart/form-data">
     <div class="col-md-3">
       <div class = "image-holder" id = 'imagePreview' style=""></div>
       <div><input type = "file" class = "form-control" name = "cover" id = "uploadImage" required/></div>
     </div>
     <div class="col-md-9 mdl-textfield mdl-js-textfield">
-      <textarea class="mdl-textfield__input" type="text" rows= "10" id="post" ></textarea>
+      <textarea class="mdl-textfield__input" type="text" rows= "10" id="post" name="post" required></textarea>
       <label class="mdl-textfield__label" for="post">Write Post...</label>
     </div>
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" style="color:white;">
-      Post
-    </button>
+    <div>
+      <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" style="color:white;">
+        Post
+      </button>
+    </div>
+  </form>
   </div>
   
   <div>
