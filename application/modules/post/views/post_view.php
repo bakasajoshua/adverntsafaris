@@ -47,28 +47,11 @@
   </div>
   
   <div>
+  <!-- cd-items -->
   <ul class="cd-items cd-container">
-    <li class="cd-item">
-      <img src="<?php echo base_url();?>assets/plugins/quickview/img/item-1.jpg" alt="Item Preview">
-      <a href="#0" class="cd-trigger">Quick View</a>
-    </li> <!-- cd-item -->
-
-    <li class="cd-item">
-      <img src="<?php echo base_url();?>assets/plugins/quickview/img/item-1.jpg" alt="Item Preview">
-      <a href="#0" class="cd-trigger">Quick View</a>
-    </li> <!-- cd-item -->
-
-    <li class="cd-item">
-      <img src="<?php echo base_url();?>assets/plugins/quickview/img/item-1.jpg" alt="Item Preview">
-      <a href="#0" class="cd-trigger">Quick View</a>
-    </li> <!-- cd-item -->
-
-    <li class="cd-item">
-      <img src="<?php echo base_url();?>assets/plugins/quickview/img/item-1.jpg" alt="Item Preview">
-      <a href="#0" class="cd-trigger">Quick View</a>
-    </li> <!-- cd-item -->
-    <!-- cd-item -->
-  </ul> <!-- cd-items -->
+    <?php echo $records; ?>
+  </ul>
+  <!-- cd-items -->
 
   <div class="cd-quick-view">
     <div class="cd-slider-wrapper">

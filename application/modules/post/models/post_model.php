@@ -32,7 +32,7 @@ class post_model extends MY_Model{
 			print "Image format not supported";
 		}
 		$user_id = $this->session->userdata('user_id');
-		$description = $this->input->post('description');
+		$description = $this->input->post('post');
 
 		$sql = "INSERT INTO `posts`
 					(`description`,`image`,`user_id`)
@@ -47,15 +47,19 @@ class post_model extends MY_Model{
 	function get_posts()
 	{
 		$li = '';
-		$posts = $this->db->get('posts')->result_array();
+		$posts = $this->db->query("SELECT 
+										*
+									FROM `posts` `ps`
+									JOIN `users` `us` ON `ps`.`user_id` = `us`.`user_id`")->result_array();
 
-		// foreach ($posts as $key => $value) {
-		// 	$li .= '<li class="cd-item">
-		// 		      <img src="'..'" alt="Item Preview">
-		// 		      <a href="#0" class="cd-trigger">Quick View</a>
-		// 		    </li>';
-		// }
-		// echo "<pre>";print_r($posts);die();
+		foreach ($posts as $key => $value) {
+			$li .= '<li class="cd-item">
+				      <img src="'.$value['image'].'" alt="Item Preview">
+				      <a href="#0" class="cd-trigger">'.$value['first_name'].' '.$value['last_name'].'</a>
+				    </li>';
+		}
+		
+		return $li;
 	}
 
 }
