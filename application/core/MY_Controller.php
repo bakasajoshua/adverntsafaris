@@ -98,6 +98,13 @@ class  MY_Controller  extends  MX_Controller {
 		return 	$libs;
 	}
 
+	function logout()
+	{
+		$this->session->sess_destroy();
+
+		redirect(base_url().'home');
+	}
+
 }
 
 

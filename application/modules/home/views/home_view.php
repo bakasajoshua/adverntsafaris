@@ -54,7 +54,7 @@
                       <div class="container">
                         <div class="carousel-caption">
                           <h1>Plan your next Adventure.</h1>
-                          <p>Access and Share information on upcoming events: Holiday deals,trips and adventures.</p>
+                          <p>Access and Share information on upcoming events: Holiday deals and trips.</p>
                         </div>
                       </div>
                     </div>

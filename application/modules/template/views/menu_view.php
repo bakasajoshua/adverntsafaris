@@ -92,9 +92,12 @@
 
                         else { ?>
                             <li>
-                                <div class="session-box">
+                                <a href="<?php echo base_url('login/logout')?>">    
+                                    <input type="submit" class="submit_top" value="Sign Out"/>
+                                </a>
+                                <!-- <div class="session-box">
                                  <?php  echo $this->session->userdata('f_name').' '.$this->session->userdata('l_name'); ?>
-                                </div>
+                                </div> -->
                             </li>
                     <?php  } ?>
                 </ul>
