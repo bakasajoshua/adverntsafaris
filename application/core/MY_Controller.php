@@ -1,110 +1,93 @@
-<?php (defined('BASEPATH')) OR exit('No direct script access allowed');
+<?php
 
-/* The MX_Controller class is autoloaded as required */
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+//error_reporting(0);
+class MY_Controller extends MX_Controller{
+    function __construct() {
+        parent::__construct();
+        $this->load->module('template');
+        // $this->year_filter();
+    }
 
-class  MY_Controller  extends  MX_Controller {
-	function __construct() {
-		parent::__construct();
-		date_default_timezone_set('Africa/Nairobi');
-	}
+    public function year_filter()
+    {
+        $string = '';
+        $year = Date('Y')-5;
 
-	//loading the user template
-	protected function template($data){
+        $string .= '<ul class="tabbed" id="network_tabs" style="padding-left: 0;">';
+        $string .= '<li><span>Year:  |</span></li>';
+        $string .= '<li><span>&nbsp;&nbsp;...&nbsp;&nbsp;|</span></li>';
+        for ($i=0; $i < 6; $i++) { 
+            $string .= '<li class="tab">
+                            <span>
+                                &nbsp;&nbsp;
+                                    <a href="'.base_url().'dashboard/county/'.$year.'">'.$year.'</a>
+                                &nbsp;&nbsp;|
+                            </span>
+                        </li>';
+            $year++;
+        }
+        $string .= '<li><span>&nbsp;&nbsp;...&nbsp;&nbsp;|</span></li>';
+        $string .= '</ul>';
 
-		$this->load->module('template');
-		$this->template->load_view($data);
+        return $string;
+    }
 
-	}
-	//loading admin template
-	protected function admin_template($info){
+    function select_county()
+    {
+    	$select = '';
+    	$counties = $this->db->get('counties')->result_array();
+    	// echo "<pre>";print_r($counties);die();
+    	$select .= '<select class="btn btn-info" id="county-select" name="county_name">';
+    	$select .= '<option value="0" selected="true"><a href="#">Kenya</a></option>';
+    	$select .= '<optgroup label="Select a County">';
+        if ($counties) {
+    		foreach ($counties as $key => $value) {
+               $select .= '<option value="'.$value['county_ID'].'">'.$value['county_name'].'</option>';
+    		}
+    	}
+    	$select .= '</optgroup>';
+    	$select .= '</select>';
+        // echo "<pre>";print_r($select);die();
+    	return $select;
+    	
+    }
 
-		$this->load->module('template');
-		$this->template->admin_view($info);
+    public function set_session_data()
+    {
+        $data = array(
+            'county_ID' => 0,
+            'sub_county_ID' => 0,
+            'year' => Date('Y'));
+        $this->session->set_userdata($data);
+        return TRUE;
+    }
 
-	}
+    public function filter($year)
+    {
+        $this->session->set_userdata('year', $year);
+        // echo "<pre>";print_r($this->session->all_userdata());die();
+        //Setting the relevant selected county
+        if ($this->input->post('county_name')){
+            $this->session->set_userdata('county_ID', $this->input->post('county_name'));
+        }else {
+            $this->set_session_data();
+            $this->session->set_userdata('year', $year);
+        }
 
-	protected function auth($data){
-		$this->load->module('template');
-		$this->template->auth_view($data);
-	}
-
-	public function is_logged_in()
-	{
-		if(!$this->session->userdata('is_logged_in')){
-			redirect(base_url().'home');
-		}
-	}
-	
-	public function load_libraries($arr=NULL){
-
-		array_unshift($arr, "jquery","bootstrap");
-				
-		$libs['css_plugin_files']		=	array();
-		$libs['css_files']				=	array();			
-		$libs['js_files']				=	array();		
-		$libs['js_plugin_files']		=	array();
-		
-
-		$asset_path		=	$this->config->item('asset_path');
-
-		$css_path		=	$this->config->item('asset_path');
-		$js_path		=	$this->config->item('js_path');
-		$plugin_path	=	$this->config->item('plugin_path');
-
-		$all_css		=	$this->config->item('css_files');
-		$all_js			=	$this->config->item('js_files');
-		$all_plugin_css	=	$this->config->item('plugin_css_files');
-		$all_plugin_js	=	$this->config->item('plugin_js_files');
-
-		
-		//load plugin css from the css folder
-		foreach ($arr as $css) {
-			foreach($all_plugin_css as $all){
-				if($css==$all['title']){
-					$libs['css_plugin_files']	=	array_merge($libs['css_plugin_files'],array($all['file']));
-				}
-			}
-		}
-		
-		//load custom made css
-		foreach ($arr as $css) {
-			foreach($all_css as $all){
-				if($css==$all['title']){
-					$libs['css_files']			=	array_merge($libs['css_files'],array($all['file']));
-				}
-			}
-		}
-
-		
-		//load custom made js
-		foreach ($arr as $js) {
-			foreach($all_js as $all){
-				if($js==$all['title']){
-					$libs['js_files']			=	array_merge($libs['js_files'],array($all['file']));
-				}
-			}
-		}
-
-		//load plugin js from the plugin js folder
-		foreach ($arr as $js) {
-			foreach($all_plugin_js as $all){
-				if($js==$all['title']){
-					$libs['js_plugin_files']	=	array_merge($libs['js_plugin_files'],array($all['file']));
-
-				}
-			}
-		}
-		
-		return 	$libs;
-	}
-
-	function logout()
-	{
-		$this->session->sess_destroy();
-
-		redirect(base_url().'home');
-	}
+        //Setting the relevant selected Sub County
+        if ($this->input->post('sub_county_select')){
+            $this->session->set_userdata('sub_county_ID', $this->input->post('sub_county_select'));
+        }else {
+            $this->session->set_userdata('sub_county_ID', 0);
+        }
+        
+        return TRUE;
+    }
 
 }
-
-
+?>
