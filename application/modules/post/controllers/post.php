@@ -28,5 +28,12 @@ class post extends MY_Controller {
 		if(!$insert){print "An error occured as the product was being inserted please try again or if the problem persist contact the administrator.!!";}
     	else{redirect(base_url().'post');}
 	}
+	
+	function likes($id)
+	{
+		$update = $this->post_model->add_like($id);
+
+		echo $update;
+	}
 
 }

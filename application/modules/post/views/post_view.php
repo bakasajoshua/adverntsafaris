@@ -6,6 +6,10 @@
     background-color: white;
     margin: 1.5em;
   }
+  img {
+    width: 280px;
+    height: 200px;
+  }
   textarea{
     width: 100%;
     margin-bottom: 1em;
@@ -34,6 +38,10 @@
       <div class = "image-holder" id = 'imagePreview' style=""></div>
       <div><input type = "file" class = "form-control" name = "cover" id = "uploadImage" required/></div>
     </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+      <input class="mdl-textfield__input" type="text" name="location" id="location" required>
+      <label class="mdl-textfield__label" for="location">Location</label>
+    </div>
     <div class="col-md-9 mdl-textfield mdl-js-textfield">
       <textarea class="mdl-textfield__input" type="text" rows= "10" id="post" name="post" required></textarea>
       <label class="mdl-textfield__label" for="post">Write Post...</label>
@@ -48,36 +56,14 @@
   
   <div>
   <!-- cd-items -->
-  <ul class="cd-items cd-container">
+  <!-- <ul class="cd-items cd-container">
     <?php echo $records; ?>
-  </ul>
+  </ul> -->
   <!-- cd-items -->
-
-  <div class="cd-quick-view">
-    <div class="cd-slider-wrapper">
-      <ul class="cd-slider">
-        <li class="selected"><img src="<?php echo base_url();?>assets/plugins/quickview/img/item-1.jpg" alt="Product 1"></li>
-        <li><img src="<?php echo base_url();?>assets/plugins/quickview/img/item-2.jpg" alt="Product 2"></li>
-        <li><img src="<?php echo base_url();?>assets/plugins/quickview/img/item-3.jpg" alt="Product 3"></li>
-      </ul> <!-- cd-slider -->
-
-      <ul class="cd-slider-navigation">
-        <li><a class="cd-next" href="#0">Prev</a></li>
-        <li><a class="cd-prev" href="#0">Next</a></li>
-      </ul> <!-- cd-slider-navigation -->
-    </div> <!-- cd-slider-wrapper -->
-
-    <div class="cd-item-info">
-      <h2>Produt Title</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
-
-      <ul class="cd-item-action">
-        <li><button class="add-to-cart">Add to cart</button></li>         
-        <li><a href="#0">Learn more</a></li>  
-      </ul> <!-- cd-item-action -->
-    </div> <!-- cd-item-info -->
-    <a href="#0" class="cd-close">Close</a>
-  </div> <!-- cd-quick-view -->
+  <div class="row">
+    <?php echo $records;?>
+  </div>
+ 
   </div>
 </div>
 <div class="col-md-3 in_slideA">
@@ -109,7 +95,7 @@
         
         height = width;
         width = height;
-        console.log(width);
+        
         $('.image-holder').height(height);
         $('.image-holder').width(width);
         
@@ -136,6 +122,15 @@
             });
         });
 
-           
         });
+
+        function like_button_clicked(id)
+        {
+          $.get('<?php echo base_url();?>post/likes/'+id, function(data){
+            obj =jQuery.parseJSON(data);
+            $('#like_button'+id).html('<i class="glyphicon glyphicon-thumbs-up" style="margin-right: 0.2em;"></i><span class="badge">'+obj+'</span>');
+          });
+          // <i class="glyphicon glyphicon-thumbs-up" style="margin-right: 0.2em;"></i><span class="badge">'.$value['likes'].'</span>
+        }
+        
         </script>
